@@ -271,7 +271,7 @@ function nextRound(){
         unStick();
         updateUI();
     }else{
-
+        updateGrandTotal();
     }
 }
 
