@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: seagreen;
+}
+.container{
+    display: flex;
+    background-color: red;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    text-align: center;
+}
+.box{
+    width: 100%;
+    font-size: 2vw;
+    background-color: white;
+    padding:5px;
+}
+.dice{
+    width: 50px;
+    height: 50px;
+    
+}
+.dice:hover{
+    border:solid 2px black;
+}
+#rollButton{
+    width:10%;
+    height:10%;
+    padding:1%;
+    border-radius: 10%;
+}
+#startAgain{
+    padding:.5%;
+    border-radius: 10%;
+}
+#sheetButton{
+    padding:10%;
+    border-radius: 10%;
+
+}
+.upperContainer{
+    width:100%;
+    flex:.5;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    background-color: black;
+    
+}
+.upperBox{
+    width:50px;
+    height: 100%;
+    background-color: lightgreen;
+    flex:1;
+    border-left: solid 1px black;
+}
+.upperBox:hover:not(:last-child){
+    background-color: brown;
+}
+
+.lowerContainer{
+    width:100%;
+    flex:.5;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    background-color: black;
+
+}
+.lowerBox{
+    width:50px;
+    height: 100%;
+    background-color: lightgreen;
+    flex:1;
+    border-left: solid 1px black;
+}
+
+.lowerBox:hover:not(:last-child){
+    background-color: brown;
+}

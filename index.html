@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>YAHTZEE</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box1"><button id="startAgain">start again?</button><h1>YAHTZEE</h1><br><h4 id="info">ROUND:1/13<br>rolls left:3</h4></div>
+        <div class="box box2"><img class="dice" id="dice1" src="images/one.png"></img></div>
+        <div class="box box3"><img class="dice" id="dice2" src="images/two.png"></img></div>
+        <div class="box box4"><img class="dice" id="dice3" src="images/three.png"></img></div>
+        <div class="box box5"><img class="dice" id="dice4" src="images/four.png"></img></div>
+        <div class="box box6"><img class="dice" id="dice5" src="images/five.png"></img></div>
+        <div class="box box7"><button id="rollButton">Roll Dice</button></div>
+        <div class="box box8">
+            <h2>Yahtzee sheet</h2>
+            <br>
+            <h4>Upper</h4>
+        </div>
+            <div class="upperContainer">
+                <div class="upperBox" id="ones"><h5 class="upperText">Ones</h5></div>
+                <div class="upperBox" id="twos"><h5 class="upperText">Twos</h5></div>
+                <div class="upperBox" id="threes"><h5 class="upperText">Threes</h5></div>
+                <div class="upperBox" id="fours"><h5 class="upperText">Fours</h5></div>
+                <div class="upperBox" id="fives"><h5 class="upperText">Fives</h5></div>
+                <div class="upperBox" id="sixes"><h5 class="upperText">Sixes</h5></div>
+                <div class="upperBox" id="upperTotal">Total:<h5 class="upperText" id="totalText">0</h5></div>
+                
+            </div>
+            <div class="box box9"><h4>Lower</h4></div>
+            <div class="lowerContainer">
+                    <div class="lowerBox" id="threeOfAKind"><h5 class="lowerText">3 of a kind</h5></div>
+                    <div class="lowerBox" id="fourOfAKind"><h5 class="lowerText">4 of a kind</h5></div>
+                    <div class="lowerBox" id="fullHouse"><h5 class="lowerText">Full House(25)</h5></div>
+                    <div class="lowerBox" id="lowStraight"><h5 class="lowerText">Low Straight(30)</h5></div>
+                    <div class="lowerBox" id="highStraight"><h5 class="lowerText">High Straight(40)</h5></div>
+                    <div class="lowerBox" id="yahtzee"><h5 class="lowerText">Yahtzee(50)</h5></div>
+                    <div class="lowerBox" id="chance"><h5 class="lowerText">Chance</h5></div>
+                    <div class="lowerBox" id="lowerTotal">Total:<h5 class="lowerText" id="lowerTotalText">0</h5></div>
+                    
+                </div>
+            <div class="box box10">GRAND TOTAL <h1 id="grandTotal">0</h1></div>
+
+
+
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
